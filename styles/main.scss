@@ -1,0 +1,26 @@
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+  }
+  
+  #summoning-circle {
+    overflow: visible;
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  #circular-list {
+    position: absolute;
+    width: 80vmin;
+    height: 80vmin;
+  }
+
+  canvas {
+    position: absolute;
+    pointer-events: none;
+  }

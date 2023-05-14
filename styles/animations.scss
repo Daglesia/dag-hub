@@ -1,0 +1,40 @@
+ 
+ @keyframes loading-spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes glow {
+    from, to {
+      filter: drop-shadow( 0 0 0.1em var(--color-accent)) drop-shadow( 0 0 0.15em var(--color-accent)) drop-shadow( 0 0 0.2em var(--color-background));
+    }
+  
+    50% {
+      
+      filter: drop-shadow( 0 0 0.1em var(--color-accent)) drop-shadow( 0 0 0.2em var(--color-background)) drop-shadow( 0 0 0.3em var(--color-background));
+    }
+  }
+  
+  @keyframes glow2 {
+    from, to {
+      filter: drop-shadow( 0 0 0.1em var(--color-accent)) drop-shadow( 0 0 0.15em var(--color-primary)) drop-shadow( 0 0 0.3em var(--color-primary));
+    }
+  
+    50% {
+      filter: drop-shadow( 0 0 0.1em var(--color-accent)) drop-shadow( 0 0 0.2em var(--color-primary)) drop-shadow( 0 0 0.4em var(--color-primary));
+    }
+  }
+  
+  @keyframes glow3 {
+    from, to {
+      filter: drop-shadow( 0 0 0.1em var(--color-accent));
+    }
+  
+    50% {
+      filter: drop-shadow( 0 0 0.1em var(--color-background));
+    }
+  }

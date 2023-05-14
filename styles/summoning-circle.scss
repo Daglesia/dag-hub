@@ -1,0 +1,36 @@
+@use '@/styles/animations.scss';
+
+#rose {
+    animation: loading-spinner 240s linear infinite, glow2 5s linear infinite;;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+ }
+ 
+ #circle-text {
+    animation: loading-spinner 360s linear infinite, glow3 5s linear infinite;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    opacity:0.9;
+    animation-direction: reverse;
+ }
+ 
+ #circle-middle {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    filter: drop-shadow( 0 0 0.2em var(--color-accent)) drop-shadow( 0 0 0.3em var(--color-primary)) drop-shadow( 0 0 0.4em var(--color-background));
+ }
+ 
+ #circle-inner {
+    animation: glow 4s ease-in infinite;
+ }
+ 
+ #circle-outer {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+ 
+    animation: glow 5s linear infinite;
+ }
+ 
+ #summon-text {
+    filter: drop-shadow( 0 0 0.05em var(--color-accent)) drop-shadow( 0 0 0.01em var(--color-primary));
+ }
